@@ -1,7 +1,10 @@
 "use client";
 import React, { useState } from "react";
-
-function Square({ value, onSquareClick }) {
+interface squareType {
+  value: string;
+  onSquareClick: () => void;
+}
+function Square({ value, onSquareClick }: squareType) {
   return (
     <button
       className="bg-white border border-black w-9 h-9 leading-9 text-center"
