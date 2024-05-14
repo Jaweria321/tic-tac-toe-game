@@ -38,7 +38,7 @@ function calculateWinner(squares: string[]) {
   }
   return null;
 }
-function Board({ xIsNext, squares, onPlay }: boardPropsType) {
+export default function Board({ xIsNext, squares, onPlay }: boardPropsType) {
   function handleClick(i: number) {
     if (calculateWinner(squares) || squares[i]) {
       return;
@@ -80,5 +80,4 @@ function Board({ xIsNext, squares, onPlay }: boardPropsType) {
   );
 }
 
-export default Board;
 
