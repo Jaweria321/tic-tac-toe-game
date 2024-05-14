@@ -1,10 +1,10 @@
 import Image from "next/image";
-import Square from "./board/page";
+import Game from "./game/page";
 
 export default function Home() {
   return (
     <>
-      <Square />
+      <Game />
     </>
   );
 }
